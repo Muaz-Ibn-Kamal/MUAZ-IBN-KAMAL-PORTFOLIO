@@ -3,320 +3,282 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#050b18" />
+    <meta name="theme-color" content="#f5f1ea" />
     <meta
       name="description"
-      content="Muaz Ibn Kamal — CSE student, AI researcher and software developer based in South Korea."
+      content="Muaz Ibn Kamal — CSE student and AI researcher in South Korea working on machine learning in the medical sector and cybersecurity. Open to research collaboration, project collaboration and design/web work."
     />
     <title>Muaz Ibn Kamal | AI Researcher & Software Developer</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316181d'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-weight='700' font-size='26' text-anchor='middle' fill='%23f5f1ea'%3EMK%3C/text%3E%3C/svg%3E"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muaz Ibn Kamal | AI Researcher & Software Developer" />
+    <meta
+      property="og:description"
+      content="Machine learning in the medical sector and cybersecurity. Research, software and design."
+    />
+    <meta property="og:image" content="MUAZ-IBN-KAMAL.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <a class="brand" href="#home"><b>MK</b> MUAZ IBN KAMAL</a>
+      <a class="brand" href="#home"><b>MK</b><span>Muaz Ibn Kamal</span></a>
       <nav id="nav">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#education">Education</a>
+        <a href="#collaborate">Collaborate</a>
       </nav>
-      <button id="menu" aria-label="Toggle menu" aria-expanded="false">
-        ☰
-      </button>
+      <a class="btn small solid cv" href="Muaz-Ibn-Kamal-CV.pdf" download>Download CV</a>
+      <button id="menu" aria-label="Toggle menu" aria-expanded="false">Menu</button>
     </header>
 
     <main>
       <!-- HERO -->
       <section class="hero" id="home">
         <div class="copy">
-          <p class="eyebrow">● BUILDING WHAT'S NEXT</p>
-          <p>Hello, I'm</p>
-          <h1>Muaz Ibn<br /><em>Kamal.</em></h1>
-          <h2>AI Researcher <i>+</i> Software Developer</h2>
-          <p class="muted">
-            CSE student based in South Korea. I research machine learning for
-            health and cybersecurity, build useful software, and care about
-            testing things properly.
+          <p class="kicker">AI researcher · Software developer · Uijeongbu, South Korea</p>
+          <h1>Muaz Ibn Kamal</h1>
+          <p class="lead">
+            I build and evaluate machine learning systems for the
+            <mark>medical sector</mark> and for <mark>cybersecurity</mark>, and I
+            turn research ideas into software people can actually use.
           </p>
           <div class="actions">
-            <a class="btn primary" href="#projects">Explore my work ↗</a>
-            <a class="btn" href="#research">Research notes ↗</a>
+            <a class="btn solid" href="Muaz-Ibn-Kamal-CV.pdf" download>Download CV ↓</a>
+            <a class="btn" href="#collaborate">Work with me →</a>
           </div>
-          <div class="stats">
-            <div><b>3</b><small>Research papers</small></div>
-            <div><b>6+</b><small>Roles &amp; internships</small></div>
-            <div><b>BD → KR</b><small>Global perspective</small></div>
-          </div>
+          <ul class="links">
+            <li><a href="https://github.com/Muaz-Ibn-Kamal" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/kamal-muaz-ibn/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:muazibnkamal8@gmail.com">muazibnkamal8@gmail.com</a></li>
+          </ul>
         </div>
-        <div class="visual">
-          <div class="planet">
-            <span> <br /><b>ARIANUJ</b></span>
-          </div>
-          <div class="orbit o1"></div>
-          <div class="orbit o2"></div>
-          <div class="portrait">
-            <div class="head">MK</div>
-            <small
-              >MUAZ IBN KAMAL<br /><img
-                src="MUAZ-IBN-KAMAL.png"
-                alt="MUAZ IBN KAMAL"
-            /></small>
-          </div>
-          <div class="float f1">
-            ⌘ &nbsp; AI / ML <small>Models · Experiments</small>
-          </div>
-          <div class="float f2">
-            ⌬ &nbsp; Cybersecurity <small>Detection · Defense</small>
-          </div>
-          <div class="float f3">⟡ &nbsp; Research to reality</div>
-        </div>
+        <figure class="photo">
+          <img
+            src="MUAZ-IBN-KAMAL.jpg"
+            alt="Portrait of Muaz Ibn Kamal"
+            width="900"
+            height="1124"
+            fetchpriority="high"
+          />
+          <figcaption><b>ARIANUJ</b></figcaption>
+        </figure>
       </section>
 
-      <!-- ABOUT -->
-      <section class="section split reveal" id="about">
-        <div class="panel">
-          <p class="eyebrow">ABOUT ME</p>
-          <h2>Curious by nature.<br /><em>Builder by choice.</em></h2>
-          <p class="muted">
-            I’m Muaz Ibn Kamal, a Computer Science and Engineering student from
-            Bangladesh, now studying in South Korea. I’m interested in
-            artificial intelligence, cybersecurity and software development, and
-            I enjoy turning research questions into working solutions. I learn
-            by building, testing and improving, and I’m always open to new
-            ideas, collaborations and opportunities to grow.
-          </p>
-          <div class="pills">
-            <span>Research-minded</span>
-            <span>Quality-focused</span>
-            <span>Cross-team collaborator</span>
-            <span>Open-source curious</span>
-          </div>
+      <!-- AT A GLANCE -->
+      <section class="section reveal" id="about">
+        <div class="section-head">
+          <p class="label">01 — About</p>
+          <h2>At a glance</h2>
         </div>
-        <div class="principles">
-          <div>
-            <b>01</b>
-            <section>
-              <h3>Ask better questions</h3>
-              <p class="muted">
-                Start with meaningful problems, not just technology trends.
-              </p>
-            </section>
-          </div>
-          <div>
-            <b>02</b>
-            <section>
-              <h3>Build with evidence</h3>
-              <p class="muted">
-                Use experiments, benchmarks and documentation to evaluate ideas.
-              </p>
-            </section>
-          </div>
-          <div>
-            <b>03</b>
-            <section>
-              <h3>Ship useful work</h3>
-              <p class="muted">
-                Turn technical learning into tools and systems people can use.
-              </p>
-            </section>
+        <div class="glance">
+          <ul class="facts">
+            <li>
+              <span>Study</span>
+              B.Sc. in CSE, Green University of Bangladesh · now at Shinhan University, South Korea
+            </li>
+            <li>
+              <span>Research</span>
+              Explainable ML for medical diagnosis, computational biology and intrusion detection
+            </li>
+            <li>
+              <span>Building</span>
+              AI automation tools, web applications and data pipelines
+            </li>
+            <li>
+              <span>Also</span>
+              Graphic design and media production for student teams and organisations
+            </li>
+            <li>
+              <span>Languages</span>
+              Bangla · English
+            </li>
+          </ul>
+          <div class="numbers">
+            <div><b>1</b><small>Paper accepted<br />IEEE CSDA 2026</small></div>
+            <div><b>1</b><small>Paper under review<br />IEEE STI 2026</small></div>
+            <div><b>6+</b><small>Research, IT &amp;<br />leadership roles</small></div>
+            <div><b>BD → KR</b><small>Studied in two<br />countries</small></div>
           </div>
         </div>
       </section>
 
       <!-- RESEARCH -->
       <section class="section reveal" id="research">
-        <p class="eyebrow">RESEARCH NOTEBOOK</p>
-        <h2>Questions worth exploring.</h2>
-        <div class="research">
-          <div>
-            <small>R / 01</small>
-            <section>
-              <h3>Explainable Breast Cancer Diagnosis</h3>
-              <p class="muted">
-                A hybrid ReliefF-wrapper feature optimization framework with
-                stacking ensembles for explainable breast cancer diagnosis.
-              </p>
-              <p class="tag">AI FOR HEALTH · EXPLAINABLE ML</p>
-            </section>
-            <label class="s-accepted">ACCEPTED</label>
-          </div>
-          <div>
-            <small>R / 02</small>
-            <section>
-              <h3>Circadian Genes &amp; Immunotherapy Response</h3>
-              <p class="muted">
-                Circadian gene dysregulation as a cross-cohort predictor of
-                immune checkpoint inhibitor response: a pilot study across
-                melanoma and urothelial carcinoma.
-              </p>
-              <p class="tag">COMPUTATIONAL BIOLOGY · PREDICTION</p>
-            </section>
-            <label class="s-submitted">SUBMITTED</label>
-          </div>
-          <div>
-            <small>R / 03</small>
-            <section>
-              <h3>Beyond Accuracy: Intrusion Detection</h3>
-              <p class="muted">
-                A cross-validated, resampling-aware evaluation of multiclass
-                intrusion detection on UNSW-NB15 with systematic error
-                diagnosis.
-              </p>
-              <p class="tag">CYBERSECURITY · EVALUATION</p>
-            </section>
-            <label class="s-working">WORKING</label>
-          </div>
+        <div class="section-head">
+          <p class="label">02 — Research</p>
+          <h2>Publications &amp; work in progress</h2>
         </div>
+        <ol class="papers">
+          <li>
+            <div class="status accepted">Accepted</div>
+            <div>
+              <h3>
+                A Hybrid ReliefF-Wrapper Feature Optimization Framework with
+                Stacking Ensembles for Explainable Breast Cancer Diagnosis
+              </h3>
+              <p class="venue">IEEE CSDA 2026 · Conference paper</p>
+              <p class="muted">
+                Hybrid feature selection plus a stacked ensemble that keeps the
+                diagnosis explainable for clinicians.
+              </p>
+              <p class="tags">Machine learning in medicine · Explainable ML</p>
+            </div>
+          </li>
+          <li>
+            <div class="status submitted">Submitted</div>
+            <div>
+              <h3>
+                Circadian Gene Dysregulation as a Cross-Cohort Predictor of
+                Immune Checkpoint Inhibitor Response: A Pilot Study Across
+                Melanoma and Urothelial Carcinoma
+              </h3>
+              <p class="venue">IEEE STI 2026 · Under review</p>
+              <p class="muted">
+                Tests whether circadian gene signatures predict immunotherapy
+                response across independent patient cohorts.
+              </p>
+              <p class="tags">
+                Computational biology · Prediction ·
+                <a href="https://github.com/Muaz-Ibn-Kamal/circadian-ici-response-validation" target="_blank" rel="noopener">Validation code ↗</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="status working">In progress</div>
+            <div>
+              <h3>
+                Beyond Accuracy: A Cross-Validated, Resampling-Aware Evaluation
+                of Multiclass Intrusion Detection on UNSW-NB15
+              </h3>
+              <p class="venue">Manuscript in preparation</p>
+              <p class="muted">
+                Leakage-free cross-validation, class-imbalance handling and a
+                systematic error analysis for network intrusion detection.
+              </p>
+              <p class="tags">Cybersecurity · Evaluation methodology</p>
+            </div>
+          </li>
+        </ol>
       </section>
 
       <!-- PROJECTS -->
       <section class="section reveal" id="projects">
-        <div class="heading">
+        <div class="section-head with-link">
           <div>
-            <p class="eyebrow">SELECTED WORK</p>
-            <h2>Ideas, engineered.</h2>
+            <p class="label">03 — Projects</p>
+            <h2>Selected work</h2>
           </div>
-          <a
-            href="https://github.com/Muaz-Ibn-Kamal"
-            target="_blank"
-            rel="noopener"
-            >GitHub profile ↗</a
-          >
+          <a href="https://github.com/Muaz-Ibn-Kamal" target="_blank" rel="noopener">All repositories on GitHub ↗</a>
         </div>
         <div class="cards">
           <article>
-            <div class="art neural">AI<span>LEAD INTELLIGENCE / 01</span></div>
-            <p class="tag">AI AUTOMATION · SOFTWARE</p>
+            <p class="tags">AI automation · Python · FastAPI</p>
             <h3>AI Client Acquisition Agent</h3>
             <p class="muted">
-              An automation workflow to discover prospects and support outreach
-              for digital-service businesses.
+              A pipeline that discovers prospects, researches companies, scores
+              leads and drafts outreach for digital-service businesses.
             </p>
-            <a
-              href="https://github.com/Muaz-Ibn-Kamal/ai-client-acquisition-agent"
-              target="_blank"
-              rel="noopener"
-              >Explore repository ↗</a
-            >
+            <a href="https://github.com/Muaz-Ibn-Kamal/ai-client-acquisition-agent" target="_blank" rel="noopener">Repository ↗</a>
           </article>
           <article>
-            <div class="art shield">⬡<span>NETWORK DEFENSE / 02</span></div>
-            <p class="tag">CYBERSECURITY · ML</p>
-            <h3>NIDS Analysis</h3>
+            <p class="tags">NLP · LLMs · Kaggle</p>
+            <h3>LLM Authorship Attribution</h3>
             <p class="muted">
-              Intrusion-detection experiments on UNSW-NB15 with resampling-aware
+              Identifying which of 18 frontier language models wrote a passage,
+              using stylometry, fine-tuned LLM classifiers and constrained
+              assignment. Ongoing Kaggle competition entry.
+            </p>
+            <a href="https://www.kaggle.com/competitions/name-that-llm" target="_blank" rel="noopener">Competition ↗</a>
+          </article>
+          <article>
+            <p class="tags">Cybersecurity · ML</p>
+            <h3>Network Intrusion Detection</h3>
+            <p class="muted">
+              Multiclass intrusion detection on UNSW-NB15 with resampling-aware
               evaluation and error analysis.
             </p>
-            <a
-              href="https://github.com/Muaz-Ibn-Kamal"
-              target="_blank"
-              rel="noopener"
-              >View related work ↗</a
-            >
+            <a href="#research">Research summary →</a>
           </article>
           <article>
-            <div class="art dna">⌁<span>HEALTH AI / 03</span></div>
-            <p class="tag">AI RESEARCH · HEALTHCARE</p>
+            <p class="tags">Machine learning in medicine</p>
             <h3>HEBCD Framework</h3>
             <p class="muted">
-              Hybrid feature selection and explainable stacking ensemble for
-              breast cancer prediction.
+              Hybrid feature selection and an explainable stacking ensemble for
+              breast cancer prediction. Accepted at IEEE CSDA 2026.
             </p>
-            <a href="#research">Read research overview ↗</a>
+            <a href="#research">Research summary →</a>
           </article>
         </div>
       </section>
 
       <!-- EXPERIENCE -->
       <section class="section reveal" id="experience">
-        <p class="eyebrow">EXPERIENCE</p>
-        <h2>Where I've contributed.</h2>
+        <div class="section-head">
+          <p class="label">04 — Experience</p>
+          <h2>Where I've contributed</h2>
+        </div>
         <div class="timeline">
           <div class="job">
             <time>Nov 2025 – Jul 2026</time>
             <div>
               <h3>Intern · Dhaka University Research Society (DURS)</h3>
-              <p class="muted">
-                Coordinated international student programs and partnerships,
-                supported documentation and reporting, and helped plan academic
-                and cultural exchange events.
-              </p>
+              <p class="muted">Coordinated international student programs and partnerships, supported documentation and reporting, and helped plan academic and cultural exchange events.</p>
             </div>
           </div>
           <div class="job">
             <time>Oct 2025 – May 2026</time>
             <div>
-              <h3>
-                Intern · Center for Research Innovation and Transformation
-                (CRIT-GUB)
-              </h3>
-              <p class="muted">
-                Assisted with research and data analysis for ongoing projects
-                and publications, and prepared reports, documentation and
-                presentations.
-              </p>
+              <h3>Intern · Center for Research Innovation and Transformation (CRIT-GUB)</h3>
+              <p class="muted">Assisted with research and data analysis for ongoing projects and publications, and prepared reports, documentation and presentations.</p>
             </div>
           </div>
           <div class="job">
             <time>Aug 2025 – Oct 2025</time>
             <div>
               <h3>Associate Head, IT &amp; Graphics · Earth's Ants</h3>
-              <p class="muted">
-                Led IT and graphic design work: website updates, multimedia
-                production and digital campaign support.
-              </p>
+              <p class="muted">Led IT and graphic design work: website updates, multimedia production and digital campaign support.</p>
             </div>
           </div>
           <div class="job">
             <time>Mar 2025 – Aug 2025</time>
             <div>
               <h3>Media Sub Team Member · GUB Mars Rover Team</h3>
-              <p class="muted">
-                Created and edited photos, videos and graphics to grow the
-                team's visibility on social media.
-              </p>
+              <p class="muted">Created and edited photos, videos and graphics to grow the team's visibility on social media.</p>
             </div>
           </div>
           <div class="job">
             <time>Sep 2024 – Sep 2025</time>
             <div>
               <h3>Joint General Secretary · GUCC Virtual Gaming Society</h3>
-              <p class="muted">
-                Organized gaming tournaments and events, worked with the
-                executive team on initiatives, and promoted the society on
-                campus and online.
-              </p>
+              <p class="muted">Organized gaming tournaments and events, worked with the executive team on initiatives, and promoted the society on campus and online.</p>
             </div>
           </div>
           <div class="job">
             <time>Feb 2024 – Feb 2025</time>
             <div>
-              <h3>
-                Intern · Green University Center for International Affairs
-                (GCiA)
-              </h3>
-              <p class="muted">
-                Supported international student programs, partner communication
-                and event execution.
-              </p>
+              <h3>Intern · Green University Center for International Affairs (GCiA)</h3>
+              <p class="muted">Supported international student programs, partner communication and event execution.</p>
             </div>
           </div>
           <div class="job">
             <time>Sep 2023 – Sep 2025</time>
             <div>
               <h3>Executive Member · BASIS Student Forum, GUB Chapter</h3>
-              <p class="muted">
-                Helped plan tech workshops, seminars and student development
-                programs, and managed member communications.
-              </p>
+              <p class="muted">Helped plan tech workshops, seminars and student development programs, and managed member communications.</p>
             </div>
           </div>
         </div>
@@ -324,68 +286,52 @@
 
       <!-- SKILLS -->
       <section class="section reveal" id="skills">
-        <p class="eyebrow">TOOLS OF THE TRADE</p>
-        <h2>Learning by building.</h2>
+        <div class="section-head">
+          <p class="label">05 — Skills</p>
+          <h2>What I work with</h2>
+        </div>
         <div class="skills">
           <div>
-            <b>⌘</b>
-            <h3>AI &amp; Data</h3>
-            <p class="muted">
-              Python · NumPy · Pandas · Model training · Evaluation
-            </p>
+            <h3>Machine learning</h3>
+            <p>Supervised learning · Ensemble &amp; stacking models · Feature selection (ReliefF, wrapper methods) · Class-imbalance resampling · Explainable ML</p>
           </div>
           <div>
-            <b>▣</b>
-            <h3>Programming</h3>
-            <p class="muted">
-              Python · C · Java · OOP · Algorithms · Data Structures
-            </p>
+            <h3>Evaluation &amp; research method</h3>
+            <p>Stratified &amp; grouped cross-validation · Leakage control · Error analysis · Reproducible pipelines · Literature review · LaTeX</p>
           </div>
           <div>
-            <b>⌬</b>
-            <h3>Web Development</h3>
-            <p class="muted">
-              HTML · CSS · JavaScript · React · TypeScript · Firebase · Django
-            </p>
+            <h3>Deep learning &amp; NLP</h3>
+            <p>PyTorch · Hugging Face Transformers · LLM fine-tuning (LoRA) · Text classification · Stylometric features</p>
           </div>
           <div>
-            <b>⛁</b>
-            <h3>Databases</h3>
-            <p class="muted">MySQL · PostgreSQL · MongoDB · Mongoose</p>
+            <h3>Data &amp; programming</h3>
+            <p>Python · NumPy · Pandas · scikit-learn · Matplotlib · Jupyter / Colab / Kaggle · C · Java · Data structures &amp; algorithms</p>
           </div>
           <div>
-            <b>✎</b>
-            <h3>Design &amp; Media</h3>
-            <p class="muted">
-              Photoshop · Illustrator · Premiere Pro · After Effects · Canva
-            </p>
+            <h3>Web development</h3>
+            <p>HTML · CSS · JavaScript · TypeScript · React · Node.js · Express · Django · Firebase · MySQL · PostgreSQL · MongoDB</p>
           </div>
           <div>
-            <b>∿</b>
-            <h3>Research &amp; Practice</h3>
-            <p class="muted">
-              Git · LaTeX · Documentation · Draw.io · Lucidchart · Project
-              management
-            </p>
+            <h3>Design &amp; media</h3>
+            <p>Photoshop · Illustrator · Premiere Pro · After Effects · Canva · Lucidchart · draw.io</p>
           </div>
         </div>
       </section>
 
       <!-- EDUCATION -->
       <section class="section reveal" id="education">
-        <p class="eyebrow">EDUCATION</p>
-        <h2>Where I study.</h2>
+        <div class="section-head">
+          <p class="label">06 — Education</p>
+          <h2>Where I study</h2>
+        </div>
         <div class="edu">
           <div>
-            <small>JUN 2026 – PRESENT</small>
+            <small>Jun 2026 – present</small>
             <h3>Shinhan University</h3>
-            <p class="muted">
-              English for Academic Purpose · Major in Information &amp;
-              Technology
-            </p>
+            <p class="muted">English for Academic Purposes · Major in Information &amp; Technology</p>
           </div>
           <div>
-            <small>SEP 2023 – 2026</small>
+            <small>Sep 2023 – 2026</small>
             <h3>Green University of Bangladesh</h3>
             <p class="muted">B.Sc. in Computer Science and Engineering</p>
           </div>
@@ -402,39 +348,42 @@
         </div>
       </section>
 
-      <!-- CONTACT -->
-      <section class="contact reveal" id="contact">
-        <p class="eyebrow">OPEN TO GOOD QUESTIONS</p>
-        <h2>Have an idea worth<br /><em>building together?</em></h2>
-        <p class="muted">
-          Research collaboration, SQA and software roles, or thoughtful
-          technical conversations. Based in Uijeongbu, South Korea.
-        </p>
-        <a class="btn primary" href="mailto:muazibnkamal8@gmail.com"
-          >Start a conversation ↗</a
-        >
-        <p class="social">
-          <a
-            href="https://github.com/Muaz-Ibn-Kamal"
-            target="_blank"
-            rel="noopener"
-            >GitHub ↗</a
-          >
-          <a
-            href="https://www.linkedin.com/in/kamal-muaz-ibn/?isSelfProfile=true"
-            target="_blank"
-            rel="noopener"
-            >LinkedIn ↗</a
-          >
-          <a href="#home">Back to top ↑</a>
+      <!-- COLLABORATE / HIRE -->
+      <section class="section reveal" id="collaborate">
+        <div class="section-head">
+          <p class="label">07 — Work with me</p>
+          <h2>Let's build something together</h2>
+        </div>
+        <div class="offers">
+          <article>
+            <h3>Research collaboration</h3>
+            <p class="muted">Machine learning in the medical sector, computational biology or cybersecurity. Happy to help with experiments, evaluation and writing.</p>
+            <a class="btn solid" href="mailto:muazibnkamal8@gmail.com?subject=Research%20collaboration">Propose a research idea →</a>
+          </article>
+          <article>
+            <h3>Project collaboration</h3>
+            <p class="muted">AI tools, automation, data pipelines or open-source software. Tell me what you are building and where you need a hand.</p>
+            <a class="btn solid" href="mailto:muazibnkamal8@gmail.com?subject=Project%20collaboration">Discuss a project →</a>
+          </article>
+          <article class="hire">
+            <h3>Hire me</h3>
+            <p class="muted">Freelance <b>web development</b> (websites, landing pages, web apps) and <b>graphic design</b> (branding, social media, posters, video).</p>
+            <a class="btn solid" href="mailto:muazibnkamal8@gmail.com?subject=Hiring%20inquiry%20-%20web%20development%20%2F%20graphic%20design">Send a hiring inquiry →</a>
+          </article>
+        </div>
+        <p class="contact-line">
+          Prefer something else? Email
+          <a href="mailto:muazibnkamal8@gmail.com">muazibnkamal8@gmail.com</a>
+          or message me on
+          <a href="https://www.linkedin.com/in/kamal-muaz-ibn/" target="_blank" rel="noopener">LinkedIn</a>.
         </p>
       </section>
     </main>
 
     <footer>
       <span>© <span id="year"></span> Muaz Ibn Kamal</span>
-      <span>THINK DEEPLY · BUILD RESPONSIBLY</span>
-      <span>Research &amp; engineering</span>
+      <span>Uijeongbu, South Korea</span>
+      <a href="#home">Back to top ↑</a>
     </footer>
 
     <script src="script.js"></script>

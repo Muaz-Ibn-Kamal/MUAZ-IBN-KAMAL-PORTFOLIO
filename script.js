@@ -12,11 +12,13 @@
     menu.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
       menu.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menu.textContent = open ? 'Close' : 'Menu';
     });
     nav.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () {
         nav.classList.remove('open');
         menu.setAttribute('aria-expanded', 'false');
+        menu.textContent = 'Menu';
       });
     });
   }
@@ -31,20 +33,20 @@
           io.unobserve(e.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.1 });
     reveals.forEach(function (el) { io.observe(el); });
   } else {
     reveals.forEach(function (el) { el.classList.add('in'); });
   }
 
-  // Active nav link on scroll
+  // Highlight the nav link of the section in view
   var links = Array.prototype.slice.call(document.querySelectorAll('#nav a'));
   var sections = links
     .map(function (a) { return document.querySelector(a.getAttribute('href')); })
     .filter(Boolean);
 
   function setActive() {
-    var pos = window.scrollY + 140;
+    var pos = window.scrollY + 120;
     var current = null;
     sections.forEach(function (s) { if (s.offsetTop <= pos) current = s.id; });
     links.forEach(function (a) {
@@ -53,16 +55,4 @@
   }
   window.addEventListener('scroll', setActive, { passive: true });
   setActive();
-
-  // Subtle parallax tilt on hero visual (desktop only)
-  var visual = document.querySelector('.visual');
-  var finePointer = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
-  if (visual && finePointer) {
-    var portrait = visual.querySelector('.portrait');
-    document.addEventListener('mousemove', function (e) {
-      var x = (e.clientX / window.innerWidth - 0.5) * 14;
-      var y = (e.clientY / window.innerHeight - 0.5) * 14;
-      portrait.style.transform = 'translate(calc(-50% + ' + x + 'px), calc(-50% + ' + y + 'px))';
-    });
-  }
 })();
