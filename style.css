@@ -118,6 +118,14 @@ nav a.active{color:var(--ink);border-color:var(--accent)}
 .edu small{font-family:var(--mono);font-size:.74rem;color:var(--accent)}
 .edu h3{font-size:1.15rem;margin:6px 0 4px}
 
+/* REFERENCES */
+.refs{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.refs article{padding:26px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius)}
+.refs h3{font-size:1.2rem;margin-bottom:6px}
+.refs p{margin-bottom:12px;line-height:1.55}
+.refs a{color:var(--accent);font-family:var(--mono);font-size:.85rem;text-decoration:none;word-break:break-all}
+.refs a:hover{text-decoration:underline}
+
 /* COLLABORATE */
 .offers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .offers article{display:flex;flex-direction:column;gap:12px;padding:28px;background:#fff;border:1px solid var(--line);border-radius:var(--radius)}
@@ -156,7 +164,7 @@ footer a{text-decoration:none}
   .glance{grid-template-columns:1fr}
 }
 @media(max-width:640px){
-  .cards,.skills,.edu,.offers{grid-template-columns:1fr}
+  .cards,.skills,.edu,.offers,.refs{grid-template-columns:1fr}
   .papers li{grid-template-columns:1fr;gap:12px}
   .job{grid-template-columns:1fr;gap:4px}
   .facts li{grid-template-columns:1fr;gap:2px}
